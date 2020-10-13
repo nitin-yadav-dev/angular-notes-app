@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 // Material Modules
 import {
@@ -13,13 +12,15 @@ import {
 } from '@angular/material';
 
 @NgModule({
-  imports:      [     BrowserModule,
+  imports: [
+    BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
 
     MatToolbarModule,
-    MatTableModule, ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+    MatTableModule,
+  ],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
